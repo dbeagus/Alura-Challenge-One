@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de Texto</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/logoalura.png" alt="Alura Logo">
+            <h1>Encriptador de Texto</h1>
+        </header>
+
+        <main>
+            <section class="input-text">
+
+                <div class="texto">
+                    <textarea id="input" placeholder="Ingrese el texto"></textarea>
+                </div>
+                <p class="alert">&#9888 Letras minusculas y sin tilde.</p>
+                <div class="button">
+                        <button onclick="encriptar()">Encriptar</button>
+                        <button onclick="desencriptar()">Desencriptar</button>
+                </div>
+
+            </section>
+
+            <section class="output-text">
+
+                <div class="texto">
+                    <textarea id="output"></textarea>
+                </div>
+
+                <div class="button">
+                    <button onclick="copiar()">Copiar al Portapapeles</button>
+                </div>
+
+            </section>
+           
+        </main>
+
+        <footer>
+            <p>&copy Diaz Bellomo Emiliano Agustin 2023</p>
+            <img class="link" src="images/linkedin.png" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/dbeagus/')">
+            <img class="link" src="images/github.png" alt="Git-Hub" onclick="window.open('https://github.com/dbeagus')">
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

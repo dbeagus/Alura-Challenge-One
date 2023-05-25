@@ -1,0 +1,106 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background:linear-gradient(lightgray 50%,white);
+}
+header{
+    display:flex;
+    margin: 10px;
+}
+header h1{
+    margin: 0 auto;
+    font-weight: bold;
+}
+main{
+    display:flex;
+    justify-content: center;
+}
+.input-text{
+    width: 60%;
+}
+.output-text{
+    width: 40%;
+}
+.texto{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    margin: auto;
+}
+textarea{
+    background:white;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    justify-content: center;
+    resize: none;
+    margin: 0 20px;    
+}
+.alert{
+    margin:10px auto;
+    display:flex;
+    padding: 0 15px;
+    font-weight: bold;
+    width: 90%;
+    text-align: left;
+    font-size: 15px;
+    opacity: 0.8;
+    color:rgb(222, 188, 18);
+}
+.button{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+button{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 10px 20px 0;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color:rgb(90, 84, 84);
+    border:none;
+    border-radius: 21px;
+    cursor:pointer;
+    transition: 1s all;
+}
+button:hover{
+    background-color: rgb(57, 53, 53);
+    transform:scale(1.01);
+}
+footer{
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+footer img{
+    width: 30px;
+    height: 30px;
+    display:inline;
+}
+.link{
+    cursor:pointer;
+}
+
+@media screen and (max-width:720px){
+    main{
+        display:inline;
+    }
+    header img{
+        width: 35px;
+        height: 35px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .input-text, .output-text{
+        width: 100%;
+    }
+    .alert{
+        text-align: center;
+        display:flex;
+        justify-content:center;
+    }
+}
